@@ -25,6 +25,7 @@ app.get("/", async (req, res) => {
                 const linkBuild = "https://qne.com.pk/"
                 const link = $(el).find(".product-item__title.text--strong.link").attr("href")
                 const image = $(el).find('aspect-ratio aspect-ratio--square > img').attr('srcset')
+                console.log("name",image)
                 var item = {
                     Name: name,
                     price: price,
